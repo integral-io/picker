@@ -1,0 +1,16 @@
+{
+  "name": "picker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/cypress": "^5.0.2",
+    "cypress": "^3.7.0"
+  }
+}
