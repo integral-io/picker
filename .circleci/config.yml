@@ -1,19 +1,7 @@
-version: 2
-jobs:
-  acceptance-tests:
-    working_directory: ~/picker
-    docker:
-      - image: circleci/node:12-browsers
-    steps:
-      - checkout
-
-      - run: npm install
-
-      - run:
-          name: run user acceptance tests
-          command: npm run cy:run
+version: 2.1
+orbs:
+  cypress: cypress-io/cypress@1.13.0
 workflows:
-  version: 2
-  workflow:
+  build:
     jobs:
-      - acceptance-tests
+      - cypress/run
